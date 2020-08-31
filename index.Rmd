@@ -120,7 +120,7 @@ d) **Visualizing Features:**
 * The separation is not very distinct, especially for class E. 
 * However, the graph uses only two Principal components. With all 12 components and a ML classifier, we aim to get a much better classification.
 
-```{r, label='PCA Plot'}
+```{r, fig.width=5, fig.height=5,fig.align='center'}
 
 g <- ggplot()+
     geom_point(mapping = aes(x=training_transformed$PC1, 

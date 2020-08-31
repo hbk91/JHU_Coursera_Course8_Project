@@ -169,12 +169,12 @@ g <- ggplot()+
                              col=training$classe), alpha=0.4) +
     labs(x='Principal Component 1', 
          y='Principal Component 2',
-         title='Categorizing classes as per top 2 PCA components', 
+         title='Classes as per top 2 PCA components', 
          color='class')
 print(g)
 ```
 
-![](index_files/figure-html/PCA Plot-1.png)<!-- -->
+<img src="index_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
 ### 4. Building Classifier:
 
