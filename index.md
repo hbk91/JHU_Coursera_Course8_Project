@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning: Human Activity Recognition"
 author: "Aman Jindal"
-date: "31 Aug 2020"
+date: "31 August 2020"
 output:
   html_document:
     keep_md: yes
@@ -163,7 +163,7 @@ d) **Visualizing Features:**
 
 
 ```r
-ggplot()+
+g <- ggplot()+
     geom_point(mapping = aes(x=training_transformed$PC1, 
                              y=training_transformed$PC2,
                              col=training$classe), alpha=0.4) +
@@ -171,6 +171,7 @@ ggplot()+
          y='Principal Component 2',
          title='Categorizing classes as per top 2 PCA components', 
          color='class')
+print(g)
 ```
 
 ![](index_files/figure-html/PCA Plot-1.png)<!-- -->
