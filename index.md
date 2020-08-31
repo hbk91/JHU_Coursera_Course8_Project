@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning: Human Activity Recognition"
 author: "Aman Jindal"
-date: "31 Aug 2020"
+date: "31 August 2020"
 output:
   html_document:
     keep_md: yes
