@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r, label='setup', echo=FALSE, include=FALSE}
-knitr::opts_chunk$set(comment='', message=FALSE, warning=FALSE, cache = TRUE)
+knitr::opts_chunk$set(comment='', message=FALSE, warning=FALSE)
 library(data.table)
 library(ggplot2)
 library(caret)
@@ -120,7 +120,7 @@ d) **Visualizing Features:**
 * The separation is not very distinct, especially for class E. 
 * However, the graph uses only two Principal components. With all 12 components and a ML classifier, we aim to get a much better classification.
 
-```{r, label='PCA Plot', cache=TRUE}
+```{r, label='PCA Plot'}
 
 ggplot()+
     geom_point(mapping = aes(x=training_transformed$PC1, 
@@ -197,7 +197,6 @@ data.table(problem_id=1:20,
            class=predict(rf_classifier, test_transformed))
 ```
 
-```
 
 
 

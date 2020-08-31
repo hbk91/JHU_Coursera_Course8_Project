@@ -298,7 +298,6 @@ data.table(problem_id=1:20,
 20:         20     B
 ```
 
-```
 
 
 
