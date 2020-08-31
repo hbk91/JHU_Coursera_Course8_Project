@@ -64,7 +64,7 @@ validation <- train_data[-inTrain,]
 b) **Cleaning the Data:**
 * The dimensions of the dataset and the number of samples in each `classe` are as shown below.
 * Next, we will figure out the feautures which have more than 5% of their values missing. We already have a rich feature space of 153 variables. Removing variables with high percentage of missing values would help us avoid imputation biases.
-* Since, no `NA` values are left, no imputation strategy is required.
+* Since, no `NA` values are left, no imputation strategy is needed.
 
 ```{r, label='Cleaing Data', cache=TRUE}
 
@@ -120,7 +120,7 @@ d) **Visualizing Features:**
 * The separation is not very distinct, especially for class E. 
 * However, the graph uses only two Principal components. With all 12 components and a ML classifier, we aim to get a much better classification.
 
-```{r, fig.width=5, fig.height=5,fig.align='center'}
+```{r, fig.width=5.5, fig.height=5.5,fig.align='center'}
 
 g <- ggplot()+
     geom_point(mapping = aes(x=training_transformed$PC1, 

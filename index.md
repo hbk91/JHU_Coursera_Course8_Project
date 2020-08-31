@@ -59,7 +59,7 @@ validation <- train_data[-inTrain,]
 b) **Cleaning the Data:**
 * The dimensions of the dataset and the number of samples in each `classe` are as shown below.
 * Next, we will figure out the feautures which have more than 5% of their values missing. We already have a rich feature space of 153 variables. Removing variables with high percentage of missing values would help us avoid imputation biases.
-* Since, no `NA` values are left, no imputation strategy is required.
+* Since, no `NA` values are left, no imputation strategy is needed.
 
 
 ```r
