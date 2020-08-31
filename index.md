@@ -44,7 +44,7 @@ test_data <- fread(test_data_path, drop=1:7)
 ### 3. Exploratory Data Analysis:
 
 a) **Overview of the Data:**
-* The test dataset is without class information and thus it will be used for prediction once the classifier is buit.
+* The test dataset is without class information and thus it will be used for prediction once the classifier is built.
 * We will split our train data into training and validation sets for building our classifier. As the number of samples is quite large, we shall reserve only 5% (979 samples) of our train dataset for validation.<br>
 
 
@@ -58,7 +58,7 @@ validation <- train_data[-inTrain,]
     
 b) **Cleaning the Data:**
 * The dimensions of the dataset and the number of samples in each `classe` are as shown below.
-* Next, we will figure out the feautures which have more than 5% of their values missing. We already have a rich feature space of 153 variables. Removing variables with high percentage of missing values would help us avoid imputation biases.
+* Next, we will figure out the features which have more than 5% of their values missing. We already have a rich feature space of 153 variables. Removing variables with high percentage of missing values would help us avoid imputation biases.
 * Since, no `NA` values are left, no imputation strategy is needed.
 
 
@@ -179,7 +179,7 @@ print(g)
 ### 4. Building Classifier:
 
 a) **Cross Validation:**
-* A five fold cross-validation strategy has been adopted for all the three models.
+* A five fold cross-validation strategy has been adopted.
 
 
 ```r

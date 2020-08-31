@@ -415,7 +415,7 @@ test_data &lt;- fread(test_data_path, drop=1:7)</code></pre>
 <li><strong>Overview of the Data:</strong></li>
 </ol>
 <ul>
-<li>The test dataset is without class information and thus it will be used for prediction once the classifier is buit.</li>
+<li>The test dataset is without class information and thus it will be used for prediction once the classifier is built.</li>
 <li>We will split our train data into training and validation sets for building our classifier. As the number of samples is quite large, we shall reserve only 5% (979 samples) of our train dataset for validation.<br></li>
 </ul>
 <pre class="r"><code>set.seed(333)
@@ -427,7 +427,7 @@ validation &lt;- train_data[-inTrain,]</code></pre>
 </ol>
 <ul>
 <li>The dimensions of the dataset and the number of samples in each <code>classe</code> are as shown below.</li>
-<li>Next, we will figure out the feautures which have more than 5% of their values missing. We already have a rich feature space of 153 variables. Removing variables with high percentage of missing values would help us avoid imputation biases.</li>
+<li>Next, we will figure out the features which have more than 5% of their values missing. We already have a rich feature space of 153 variables. Removing variables with high percentage of missing values would help us avoid imputation biases.</li>
 <li>Since, no <code>NA</code> values are left, no imputation strategy is needed.</li>
 </ul>
 <pre class="r"><code>dim(train_data)</code></pre>
@@ -501,7 +501,7 @@ print(g)</code></pre>
 <li><strong>Cross Validation:</strong></li>
 </ol>
 <ul>
-<li>A five fold cross-validation strategy has been adopted for all the three models.</li>
+<li>A five fold cross-validation strategy has been adopted.</li>
 </ul>
 <pre class="r"><code>fitControl &lt;- trainControl(method = &#39;cv&#39;, number = 5)</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
