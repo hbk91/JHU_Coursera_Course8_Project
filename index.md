@@ -16,11 +16,11 @@ The course in turn has sourced the data from [Velloso, E.; Bulling, A.; Gellerse
 
 ### 2. Introduction:
 
-The growth of fitness tracking gadgets has led to a movemment of 'quantified self' wherein tech and fitness enthusiasts monitor the quality and quantity of their physical activity to achieve their fitness goals. The [study above](http://web.archive.org/web/20170519033209/http://groupware.les.inf.puc-rio.br/public/papers/2013.Velloso.QAR-WLE.pdf) has its focus on the quality aspect of those physical activities. <br>
+The growth of fitness tracking gadgets has led to a movemment of 'quantified self' wherein tech and fitness enthusiasts monitor the quality and quantity of their physical activity to achieve their fitness goals. The [study above](http://web.archive.org/web/20170519033209/http://groupware.les.inf.puc-rio.br/public/papers/2013.Velloso.QAR-WLE.pdf) has its focus on the quality aspect of those physical activities. <br/>
 
 Specifically, the study has analyzed and collected data for weight lifting exercises. The data has five target classes viz. `A`, `B`, `C`, `D` and `E`. Class `A` corresponds to the correct method of a weight lifting exercise while the other classes correspond to erroneous methods. The features for these classes are different body measurements obtained through digital gadgets. A detailed overview of the features can be found [here](http://web.archive.org/web/20170519033209/http://groupware.les.inf.puc-rio.br/public/papers/2013.Velloso.QAR-WLE.pdf) 
 
-In this paper, we shall examine this data to build a ML classifier to classify the above six classes. Columns `1:7` in the data have been dropped as they correspond to row numbers, subject names and timestamps of observations making these columns irrelevant to our classification problem.
+In this paper, we shall examine this data to build a ML classifier to classify the above five classes. Columns `1:7` in the data have been dropped as they correspond to row numbers, subject names and timestamps of observations making these columns irrelevant to our classification problem.
 
 
 ```r
@@ -298,9 +298,3 @@ data.table(problem_id=1:20,
 19:         19     B
 20:         20     B
 ```
-
-
-
-
-
-
